@@ -1,0 +1,6 @@
+"123456"100000"987654321"20000"Canada Vancouver"
+"234567"10000"876543219"400"Long island camp halfblood"
+"345678"4000"765432198"150"Hawkins jungle"
+"456789"3000"654321987"50"wooden littel house"
+"567891"5000"543219876"40"UA heighschool class A dorms"
+"678912"0"432198765"20"Hogwarts Gryffindor tower"

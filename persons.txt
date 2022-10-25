@@ -1,0 +1,7 @@
+"Mobina"Momenzadeh"123456"2003/4/10/"Esfahan"
+"Percy"jakson"234567"2005/6/7"LA"
+"Will"Byers"345678"1978/7/9"Hawkins"
+"Jane"Hopper"456789"1978/9/10"Hawkins"
+"Shoto"Todoroki"567891"2006/1/21"Tokyo"
+"Harry"Potter"678912"2000/4/6"unknown"
+"Leo"Valds"789123"2001/8/5"camp halfblood"

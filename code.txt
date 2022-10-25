@@ -1,0 +1,71 @@
+String[][] personT = new String[Classes.Person.allPersons.size()][5];
+        for(int i=0; i<Classes.Person.allPersons.size(); i++)
+        {
+            personT[i][0] = Classes.Person.allPersons.get(i).getName();
+            personT[i][1] = Classes.Person.allPersons.get(i).getFamily();
+            personT[i][2] = Classes.Person.allPersons.get(i).getNationalId();
+            personT[i][3] = Classes.Person.allPersons.get(i).getBirthday();
+            personT[i][4] = Classes.Person.allPersons.get(i).getBirthPlace();
+
+        }
+
+
+String[][] letterT = new String[Classes.Letter.allLetters.size()][5];
+            for(int i=0; i<Classes.Letter.allLetters.size(); i++)
+            {
+                letterT[i][0] = Classes.Letter.allLetters.get(i).getLetterText();
+                letterT[i][1] = Classes.Letter.allLetters.get(i).getReceiverPC();
+                letterT[i][2] = Classes.Letter.allLetters.get(i).getSenderPC();
+                letterT[i][3] = String.valueOf(Classes.Letter.allLetters.get(i).getPriorityDegree());
+                letterT[i][4] = Classes.Letter.allLetters.get(i).getLetterId();
+
+            }
+
+            table3.setModel(new DefaultTableModel(
+                    new Object[][] {
+                            {null, null, null, null, null},
+                            {null, null, null, null, null},
+                    },
+                    new String[] {
+                            "Classes.Letter Text ", "Receiver PC", "Sender PC", "Priority degree", "Classes.Letter Id"
+                    }
+            ));
+
+
+
+ String[][] houseT = new String[Classes.House.allHouses.size()][5];
+            for(int i=0; i<Classes.House.allHouses.size(); i++)
+            {
+                houseT[i][0] = Classes.House.allHouses.get(i).getOwner_nationalId();
+                houseT[i][1] = Classes.House.allHouses.get(i).getPrice();
+                houseT[i][2] = Classes.House.allHouses.get(i).getPostalCode();
+                houseT[i][3] = Classes.House.allHouses.get(i).getArea();
+                houseT[i][4] = Classes.House.allHouses.get(i).getAddress();
+
+            }
+
+
+Classes.ParcelPost temp;
+            String[][] postT = new String[Geraphic.Main.parcelPosts.size()][9];
+            for(int i=-2; i<Geraphic.Main.parcelPosts.size(); i++)
+            {
+                temp = Geraphic.Main.parcelPosts.poll();
+                postT[i][0] = String.valueOf(temp.getCargo().getPriorityDegree());
+                postT[i][1] = temp.getCargo().getLetterId();
+                postT[i][2] = temp.getCargo().getLetterText();
+                postT[i][3] = temp.getCargo().getReceiverPC();
+                postT[i][4] = temp.getCargo().getSenderPC();
+                postT[i][5] = temp.getReceiverName();
+                postT[i][6] = temp.getSenderName();
+                postT[i][7] = temp.getReceiverAddress();
+                postT[i][8] = temp.getSenderAddress();
+                
+            }
+
+            table1.setModel(new DefaultTableModel(
+                    postT
+                   ,
+                    new String[] {
+                            "Priority degree",  "Classes.Letter Id", "Classes.Letter Text ", "Receiver PC", "Sender PC", "Receiver Name", "Sender Name", "Receiver Address", "Sender Address"
+                    }
+            ));
